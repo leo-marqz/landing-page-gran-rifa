@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/df-landing.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding:20px 40px;
+    font-size: 16px;
+}
+
+nav{
+    width: 100%;
+    height:150px;
+    display: flex;
+    justify-content: right;
+}
+
+nav img{
+    width: 150px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 60% 1fr;
+}
+
+/* presentation==================================> */
+.presentation{
+    position: relative;
+}
+
+.presentation img{
+    width: 75%;
+    position:absolute;
+    top:-190px;
+    left:50px;
+}
+
+.presentation .socials{
+    position: absolute;
+    bottom:0px;
+    display: flex;
+    gap:5px;
+}
+
+.socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    border:2px solid white;
+    border-radius: 50%;
+    padding:3px;
+    transition: all 0.4s ease-in-out;
+}
+
+.socials a:nth-child(1):hover{
+    background: rgb(19, 61, 247);
+}
+
+.socials a:nth-child(2):hover{
+    background: linear-gradient(blue, red, yellow);
+}
+
+.socials a:nth-child(3):hover{
+    background: rgb(76, 132, 253);
+}
+
+/* description=====================================> */
+.description{
+    color:white;
+}
+
+.title{
+    margin-top:10px;
+    text-align:center;
+    font-size: 3.9rem;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+.text{
+    margin-top: 10px;
+}
+
+.text p{
+    margin-bottom: 15px;
+    text-align:center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing:1px;
+}
+
+.text p strong{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+/* reguister =============================================> */
+
+.register{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.register form{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.register form input{
+    background: transparent;
+    color:white;
+    padding:10px;
+    font-size: 1.1rem;
+}
+
+.register form input[type="email"]{
+    border: 4px dashed white;
+    border-radius: 5px;
+    outline: none;
+}
+.register form input[type="email"]::placeholder{
+    color:rgb(236, 236, 236);
+}
+
+.register form input[type="submit"]{
+    border:3px solid white;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.register form input[type="submit"]:hover{
+    color:black;
+    background: white;
+}
+
+/* link ======================================================== > */
+
+.link{
+    margin-top:25px;
+    text-align:right;
+}
+
+.link a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+/* media querys */
+
+@media screen and (max-width: 1440px){
+    .presentation img{
+        position:absolute;
+        top:0px;
+        left:50px;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .title{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .presentation img{
+        width: 95%;
+        top:-70px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    body{
+        width: 100%;
+        height:auto;
+        margin:0px;
+        padding:5px;
+    }
+
+    nav{
+        width: 100%;
+        height:50px;
+
+    }
+
+    nav img{
+        width: 100%;
+        width: 50px;
+    }
+
+    .grid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap:25px;
+    }
+
+    .presentation img{
+        width: 90%;
+        position: relative;
+        top:-50px;
+        left:0px;
+    }
+
+    .presentation .socials{
+        display: block;
+        padding:0px 5px;
+    }
+    
+    .presentation .socials a{
+        margin-top: 10px;
+    }
+
+    .description{
+        position: relative;
+        top:-25px;
+    }
+
+    .title{
+        font-size:1rem;
+    }
+
+    .text p{
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    .text p{
+        font-size: 0.7rem;
+    }
+}
