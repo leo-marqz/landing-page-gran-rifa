@@ -34,6 +34,7 @@ nav img{
 }
 
 .grid{
+    height:100%;
     display:grid;
     grid-template-columns: 60% 1fr;
 }
@@ -250,7 +251,35 @@ nav img{
 }
 
 @media screen and (max-width: 760px) {
+
+    body{
+        height:100vh;
+        margin:0px;
+        padding: 0px 5px;
+    }
+
+    .grid{
+        height:calc(100vh - 50px);
+    }
+
+    .presentation img{
+        width: 90%;
+        position: relative;
+        top:-80px;
+        left:0px;
+    }
+
+    .description{
+        position: relative;
+        top:-95px;
+    }
+
     .text p{
         font-size: 0.7rem;
+    }
+
+    .register{
+        width: 100%;
+        margin-top: 0px;
     }
 }
