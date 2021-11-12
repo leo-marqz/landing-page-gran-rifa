@@ -158,6 +158,12 @@ nav img{
     background: white;
 }
 
+#my-form-status{
+    padding:2px;
+    text-align:center;
+    color: rgb(209, 209, 209);
+}
+
 /* link ======================================================== > */
 
 .link{
@@ -215,6 +221,7 @@ nav img{
 
     .grid{
         width: 100%;
+        /* height:calc(100vh - 50px); */
         grid-template-columns: 1fr;
         gap:25px;
     }
@@ -253,25 +260,23 @@ nav img{
 @media screen and (max-width: 760px) {
 
     body{
-        height:100vh;
+        height:auto;
         margin:0px;
         padding: 0px 5px;
     }
 
-    .grid{
-        height:calc(100vh - 50px);
-    }
+    
 
     .presentation img{
         width: 90%;
         position: relative;
-        top:-80px;
+        top:-70px;
         left:0px;
     }
 
     .description{
         position: relative;
-        top:-95px;
+        /* top:-100px; */
     }
 
     .text p{
